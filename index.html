@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#1CCC5B" />
+	<link rel="stylesheet" href="styles/css/styles.css">
+	<link rel="shortcut icon" href="assets/icon/favicon.ico" type="image/x-icon">
+	<title>Manage appointments</title>
+</head>
+
+<body>
+	<header class="header">
+		<figure class="header__img">
+			<a href="index.html"><img src="assets/img/lion.png" alt="Lion CamiloG"></a>
+		</figure>
+		<h1 class="header__title">
+			Veterinary appointments
+		</h1>
+	</header>
+	<main>
+		<div class="box-appointments">
+			<section class="box-appointments__add-form">
+				<p class="box-appointments__title add-form">Patient's data</p>
+				<form id="form-add-quote">
+					<p class="box-appointments__add-form-label first">Pet name: </p><input class="box-appointments__input"
+						type="text" name="pet" id="pet">
+					<p class="box-appointments__add-form-label">Owner name: </p><input class="box-appointments__input" type="text"
+						name="owner" id="owner">
+					<p class="box-appointments__add-form-label">Phone number: </p><input class="box-appointments__input"
+						type="text" name="phone" id="phone">
+					<p class="box-appointments__add-form-label">Date: </p><input class="box-appointments__input" type="date"
+						name="date" id="date">
+					<p class="box-appointments__add-form-label">Time: </p><input class="box-appointments__input" type="time"
+						name="time" id="time">
+					<p class="box-appointments__add-form-label">Symptoms: </p><textarea class="box-appointments__input textarea"
+						name="symptoms" id="symptoms"></textarea>
+					<button class="box-appointments__btn-add">
+						<i class="bi bi-plus-circle-fill"></i>
+						Add quote
+					</button>
+				</form>
+			</section>
+			<section class="section-quotes">
+				<p class="box-appointments__title">Manage your appointments</p>
+				<div id="appointments-container">
+				</div>
+			</section>
+		</div>
+	</main>
+	<script src="js/app.js"></script>
+</body>
+
+</html>
